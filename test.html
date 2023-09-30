@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Read Mail</title>
+</head>
+<body>
+<h1>Read Mail</h1>
+<input type="text" id="username" placeholder="Enter your name">
+<button onclick="readMail()">Read Mail</button>
+<div id="result"></div>
+
+<!-- 
+<script>
+function readMail() {
+  var header = { "Accept": "application/json"}
+  var method = 'GET'
+  var username = document.getElementById("username").value;
+  fetch("https://inboxes.com/api/v2/inbox/" + encodeURIComponent(username) + "@getnada.com")
+  method : method
+  headers: header
+  mode: 'cors'
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("result").innerHTML = data;
+    })
+    .catch(error => {
+      console.error(error);
+      document.getElementById("result").innerHTML = error;
+    });
+}
+</script>
+</body>
+</html> -->
